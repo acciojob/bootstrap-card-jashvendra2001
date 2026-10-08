@@ -3,21 +3,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Cards</title>
 
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
-
 <body>
-  <div class="container mt-3">
 
-    <h2>Welcome to Sync5</h2>
+<div class="container mt-3">
 
-    <!-- New Features Card -->
-    <div class="card mb-1">
+  <h2>Welcome to Sync5</h2>
+
+  <!-- Card Deck with 2 Cards -->
+  <div class="card-deck mb-2">
+
+    <!-- First Card -->
+    <div class="card">
       <div class="card-header">
         New Features
       </div>
@@ -39,55 +41,52 @@
       </div>
     </div>
 
-    <!-- Alert Card -->
-    <div class="card-deck mb-1">
-      <div class="card bg-danger text-white"
-           style="max-width: 230px;">
-
-        <div class="card-header">
-          Alert
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title">
-            Node Dead
-          </h5>
-
-          <p class="card-text">
-            Node 5 (east-us) is offline for
-            last 12 days.
-          </p>
-        </div>
+    <!-- Second Card -->
+    <div class="card bg-danger text-white">
+      <div class="card-header">
+        Alert
       </div>
-    </div>
-
-    <!-- News Card -->
-    <div class="card">
-      <img
-        src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1000"
-        class="card-img-top"
-        alt="Underwater ocean"
-      >
 
       <div class="card-body">
-        <h5 class="card-title">
-          President under Pressure
-        </h5>
+        <h5 class="card-title">Node Dead</h5>
 
         <p class="card-text">
-          The US president is under pressure
-          to respond to a widespread
-          cyber-attack linked to China.
-        </p>
-
-        <p class="card-text">
-          <small class="text-muted">
-            Last updated 12 mins ago
-          </small>
+          Node 5 (east-us) is offline for
+          the last 12 days.
         </p>
       </div>
     </div>
 
   </div>
+
+  <!-- News Card -->
+  <div class="card">
+    <img
+      src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1000"
+      class="card-img-top"
+      alt="Ocean"
+    >
+
+    <div class="card-body">
+      <h5 class="card-title">
+        President under Pressure
+      </h5>
+
+      <p class="card-text">
+        The US president is under pressure
+        to respond to a widespread
+        cyber-attack linked to China.
+      </p>
+
+      <p class="card-text">
+        <small class="text-muted">
+          Last updated 12 mins ago
+        </small>
+      </p>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
